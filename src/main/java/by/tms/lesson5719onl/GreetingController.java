@@ -15,7 +15,6 @@ public class GreetingController {
 
   @GetMapping("/{name}")
   public String greeting(@PathVariable String name) {
-    System.out.println()
     return String.format("Hello %s!", name);
   }
 }
